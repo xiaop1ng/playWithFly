@@ -2,6 +2,14 @@ app = "playwithsh-ss"
 
 [build]
 
+[http_service]
+  min_machines_running = 1
+
+[[vm]]
+  count = 1
+  size = "shared-cpu-1x"
+  memory = "256mb"
+
 [[services]]
   internal_port = 8388
   protocol = "tcp"
