@@ -1,0 +1,10 @@
+app = "playwithsh-ss"
+
+[build]
+
+[[services]]
+  internal_port = 8388
+  protocol = "tcp"
+
+  [[services.ports]]
+    port = 8388
