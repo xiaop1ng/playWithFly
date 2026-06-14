@@ -1,0 +1,11 @@
+services:
+  - type: web
+    name: playwithsh-ss
+    runtime: docker
+    plan: free
+    dockerfilePath: ./Dockerfile
+    envVars:
+      - key: SSPASSWORD
+        value: 123456
+      - key: SSPORT
+        value: "8388"
